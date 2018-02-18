@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href=./assets/css/style.css>
+</head>
+
+<body>
+    <!--Build HTML-->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Crystal Collector</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" id="gameWrapper">
+                <!--Instructions-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Instructions</h3>
+                            <p> Blah Blah Blah Blah Blah blah blah Blah Blah Blah Blah Blah blah blah Blah Blah Blah Blah Blah
+                                blah blah Blah Blah Blah Blah Blah blah blah </p>
+                    </div>
+                </div>
+                <!--Target #-->
+                <div class="panel panel default">
+                    <div class="panel-body">
+                        <h2 class="panel title">Target Number</h2>
+                        <h2 id="targetNumber"> 55</h2>
+                    </div>
+                </div>
+                <!--4 crystals displayed as buttons on page-->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <button class="btn btn-default">
+                                <img src="./assets/images/amethyst.jpg" id="cyrstal-1" class="crystalImage">
+                        </button>
+                        <button class="btn btn-default">
+                                <img src="./assets/images/carnelian.jpg" id="cyrstal-2" class="crystalImage">
+                        </button>
+                        <button class="btn btn-default">
+                                <img src="./assets/images/fluorite.jpg" id="cyrstal-3" class="crystalImage">
+                        </button>
+                        <button class="btn btn-default">
+                                <img src="./assets/images/lazuli.jpg" id="cyrstal-4" class="crystalImage">
+                        </button>
+                    </div>
+                </div>
+                <!--Total Score-->
+                <div class="panel panel default">
+                    <div class="panel-body">
+                        <h2 class="panel title">Your Score</h2>
+                        <h2 id="targetNumber"> 35</h2>
+                    </div>
+                </div>
+                <!--Wins and Losses -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        Wins:
+                        <span id="winCounter">0</span>
+                        Losses:
+                        <span id="lossCounter">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    var targetScore;
+    var crystal1;
+    var cyrstal2;
+    var crystal3;
+    var crystal4;
+    var playerScore;
+    var winCounter;
+    var lossCounter;
+    
+    
+});
+//Player shown random number at start of game 
+//Random number between 19-120
+//Player clicks crystal and it adds points to player's score
+//Each crystal should have random value between 1-12
+//Player wins if their total score matches random number from beginning of game
+//Player loses if score goes above random number
+//Game restarts whenever player wins or loses
+// Game should show the number of wins and losses
+
+</script>
+
+</html>

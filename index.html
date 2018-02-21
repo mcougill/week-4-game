@@ -86,6 +86,19 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
+    
+    function restart () {
+         //Random number between 19-120
+    var targetScore = Math.floor(Math.random() * 120) + 19;
+    //Each crystal should have random value between 1-12
+    var crystal1 = Math.floor(Math.random() * 12) + 1;
+    var crystal2 = Math.floor(Math.random() * 12) + 1;
+    var crystal3 = Math.floor(Math.random() * 12) + 1;
+    var crystal4 = Math.floor(Math.random() * 12) + 1;
+    var playerScore = 0;
+
+    };
+    
     //Random number between 19-120
     var targetScore = Math.floor(Math.random() * 120) + 19;
     //Each crystal should have random value between 1-12
@@ -112,6 +125,7 @@ $(document).ready(function() {
     $("#crystal-1").on("click", function(){
         playerScore=playerScore+crystal1;
         $("#currentScore").text(playerScore);
+        console.log(playerScore);
     });
     $("#crystal-2").on("click", function(){
         playerScore=playerScore+crystal2;
@@ -125,14 +139,16 @@ $(document).ready(function() {
         playerScore=playerScore+crystal4;
         $("#currentScore").text(playerScore);
     });
+  
     
 });
 
 
 //Player wins if their total score matches random number from beginning of game
 //Player loses if score goes above random number
-//Game restarts whenever player wins or loses
 // Game should show the number of wins and losses
+//Game restarts whenever player wins or loses
+
 
 </script>
 
